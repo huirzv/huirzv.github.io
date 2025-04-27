@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoRanks | Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .extra-glow {
+            box-shadow: 0 0 30px rgba(255, 0, 102, 0.7), 0 0 15px rgba(255, 0, 102, 0.5) !important;
+        }
+        
+        .extra-glow:hover {
+            box-shadow: 0 0 40px rgba(255, 0, 102, 0.9), 0 0 20px rgba(255, 0, 102, 0.7), 0 0 10px rgba(255, 0, 102, 0.5) !important;
+        }
+        
+        .extra-glow::after {
+            opacity: 0.6 !important;
+            filter: blur(12px) !important;
+        }
+        
+        .extra-glow:hover::after {
+            opacity: 0.8 !important;
+            filter: blur(20px) !important;
+        }
+        
+        .trusted-by-scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 2rem;
+  background-color: rgba(0,0,0,0.6);
+  padding: 1rem 0;
+  border-radius: 10px;
+  position: relative;
+}
+.trusted-by-scroll {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  animation: trusted-scroll 35s linear infinite;
+  width: max-content;
+}
+@keyframes trusted-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="./index.html" class="logo">
+                <img src="https://i.ibb.co/VcJ18Qpt/image.png" alt="Logo">
+                RoRanks
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./plans.html">Plans</a></li>
+                    <li><a href="./credits.html">Credits</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="../image.png" alt="Background" class="hero-image">
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title">RoRanks</h1>
+                <p class="hero-subtitle">Unleash the best ranking service for your community.</p>
+                <div class="hero-buttons">
+                    <a href="./plans.html" class="btn extra-glow">Get Started</a>
+                    <a href="./contact.html" class="btn btn-outline extra-glow">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">What We Offer</h2>
+            <div class="cards">
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="card-title">Fast Speeds & Analytics</h3>
+                    <p class="card-content">Experience the fast speeds, along with analytics to stay updated with how your bot and group are doing. Along with updates fairly often, never get tired of seeing the same content.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="card-title">Top Tier Security</h3>
+                    <p class="card-content">No need to be worried about someone stealing your bot, as RoRanks has implemented multiple security features to ensure the best results and security measures.</p>
+                </div>  
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="card-title">Configuration</h3>
+                    <p class="card-content">Unlock the best configuration seen from areas in areas like our dashboard and your webhook. Never skip a beat with how rankings are going, as RoRanks automatically sends updates after each user is ranked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="cards">
+                <div class="animate-on-scroll" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 100%; min-height: 350px;">
+                    <h2 class="section-title" style="text-align: center;">About Us</h2>
+                    <p style="text-align: center;">RoRanks is a growing ranking service revolutionizing the industry with ultra low cost prices, while still offering the same quality and support you'd expect. </p>
+                    <p style="text-align: center;">We've dedicated an entire team to engineer the best ranking experience for you.</p>
+                    <div style="margin-top: 2rem;">
+                        <a href="./credits.html" class="btn extra-glow">Meet Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="cards" style="text-align: center;">
+                <div class="animate-on-scroll">
+                    <h3 class="counter" data-target="2150000">0</h3>
+                    <p>Supported Group Members</p>
+                </div>
+                <div class="animate-on-scroll">
+                    <h3 class="counter" data-target="8500">0</h3>
+                    <p>Users Ranked</p>
+                </div>
+                <div class="animate-on-scroll">
+                    <h3 class="counter" data-target="61275814">0</h3>
+                    <p>Supported Game Visits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <div class="animate-on-scroll">
+                <h2 class="section-title">Choose RoRanks</h2>
+                <div class="cards">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Webhook & Dashboard</h3>
+                        <p class="card-content">Stay updated with real time analytics about your growth, rankings, and API usage. </p>
+                        <p class="card-content" style="margin-top: 1rem; opacity: 0.7;">Easily manage multiple groups with ease with our dashboard as well as support your game staff with a management system.</p>
+                    </div>
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3 class="card-title">Premium Services</h3>
+                        <p class="card-content">We offer highly configurable and advanced quiz & donation centers. With our plans, we take pride in offering you the best & most smooth ranking experience ever, meaning if you have any issues, don't hesitate to contact us.</p>
+                        <p class="card-content" style="margin-top: 1rem; opacity: 0.7;">24/7 monitoring to detect anything malicious, any  open ports, and protection from any DDOS attacks.</p>
+                    </div>
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <i class="fa-sharp fa-solid fa-check"></i>
+                        </div>
+                        <h3 class="card-title">Simplified Management</h3>
+                        <p class="card-content">Easily manage staff, your group, and rankings with our dashboard and discord bot. 
+                            Power your community with our included bot that let's you sync roles directly from Discord to Roblox, as well as allow staff to manage blacklists or moderatation for users who abuse your game(s) or group(s).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">FAQs</h2>
+            <div class="cards" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+                <div class="card animate-on-scroll">
+                    <h3 class="card-title">How secure is RoRanks?</h3>
+                    <p class="card-content">RoRanks takes your security seriously. Our service is protected with multiple security features such as network monitoring, a firewall, DDOS protection, and an advanced proxy.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <h3 class="card-title">Can I pay in Robux?</h3>
+                    <p class="card-content">We do offer payments via Robux. Prices can range from R$400-500 per month due to DevEx rates. Contact us to recieve your key today.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <h3 class="card-title">How can I pay & for how many months?</h3>
+                    <p class="card-content">RoRanks accepts payments with Robux and Currency. To purchase with currency, we use PayPal. You are allowed to pay for however long you would like, such as 3 months, but we do not sell lifetime plans unless you apply or have approval from Huirzv.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <div class="animate-on-scroll">
+                <h2 class="section-title">Trusted By</h2>
+                <div class="trusted-by-scroll-wrapper">
+  <div class="trusted-by-scroll">
+                    <!-- Group 1 -->
+                    <a href="https://www.roblox.com/communities/8927586/Restaurant-Roleplay#!/about" target="_blank" style="display: flex; align-items: center; color: #fff; justify-content: center; min-width: 260px;">
+    <img src="https://tr.rbxcdn.com/180DAY-461bbdf07a673a5fba83449642a4a1ea/420/420/Image/Png/noFilter" alt="Restaurant Logo" style="width: 64px; height: 64px; margin-right: 18px; border-radius: 12px; box-shadow: 0 2px 16px #0008;">
+    <div>
+        <h3 style="margin-bottom: 0.3rem; font-size: 1.5rem;">Restaurant Roleplay</h3>
+        <div style="font-weight: bold; color: #ffef8f; font-size: 1.1rem; margin-bottom: 0.2rem;">1M+</div>
+
+    </div>
+</a>
+    
+                    <!-- Group 2 -->
+                    <a href="https://www.roblox.com/communities/33205238/Aerborne-Airport-Roleplay#!/about" target="_blank" style="display: flex; align-items: center; color: #fff; justify-content: center; min-width: 260px;">
+    <img src="https://tr.rbxcdn.com/180DAY-0e99a78533f8b4cf55ffb9b7a544df5d/420/420/Image/Png/noFilter" alt="Airport Logo" style="width: 64px; height: 64px; margin-right: 18px; border-radius: 12px; box-shadow: 0 2px 16px #0008;">
+    <div>
+        <h3 style="margin-bottom: 0.3rem; font-size: 1.5rem;">Aerborne Airport Roleplay</h3>
+        <div style="font-weight: bold; color: #ffef8f; font-size: 1.1rem; margin-bottom: 0.2rem;">232K+</div>
+
+    </div>
+</a>
+    
+                    <!-- Group 3 -->
+                    <a href="https://www.roblox.com/communities/33862880/Seaborne-Cruiselines-Roleplay#!/about" target="_blank" style="display: flex; align-items: center; color: #fff; justify-content: center; min-width: 260px;">
+    <img src="https://tr.rbxcdn.com/180DAY-04f9b8e6b9fed5ef36d59913520c52d7/420/420/Image/Png/noFilter" alt="Cruiselines Logo" style="width: 64px; height: 64px; margin-right: 18px; border-radius: 12px; box-shadow: 0 2px 16px #0008;">
+    <div>
+        <h3 style="margin-bottom: 0.3rem; font-size: 1.5rem;">Seaborne Cruiselines</h3>
+        <div style="font-weight: bold; color: #ffef8f; font-size: 1.1rem; margin-bottom: 0.2rem;">5k+</div>
+
+    </div>
+</a>
+    
+                    <!-- Group 4 -->
+                    <a href="https://www.roblox.com/communities/4595505/Blau-Hotels-Resorts#!/about" target="_blank" style="display: flex; align-items: center; color: #fff; justify-content: center; min-width: 260px;">
+    <img src="https://tr.rbxcdn.com/180DAY-80e0f7d402e9de0c5aa03b316ca45d29/420/420/Image/Png/noFilter" alt="Hotel Logo" style="width: 64px; height: 64px; margin-right: 18px; border-radius: 12px; box-shadow: 0 2px 16px #0008;">
+    <div>
+        <h3 style="margin-bottom: 0.3rem; font-size: 1.5rem;">Blau Hotels & Resorts</h3>
+        <div style="font-weight: bold; color: #ffef8f; font-size: 1.1rem; margin-bottom: 0.2rem;">271K+</div>
+
+    </div>
+</a>
+                                     
+                <a href="https://www.roblox.com/communities/4683405/United-States-avy#!/about" target="_blank" style="display: flex; align-items: center; color: #fff; justify-content: center; min-width: 260px;">
+    <img src="https://tr.rbxcdn.com/180DAY-5ec65a17f3cb9d610b0bf7525d69a06e/150/150/Image/Webp/noFilter" alt="Navy Logo" style="width: 64px; height: 64px; margin-right: 18px; border-radius: 12px; box-shadow: 0 2px 16px #0008;">
+    <div>
+        <h3 style="margin-bottom: 0.3rem; font-size: 1.5rem;">Romeo's United States Navy</h3>
+        <div style="font-weight: bold; color: #ffef8f; font-size: 1.1rem; margin-bottom: 0.2rem;">336k+</div>
+
+    </div>
+</a>
+    <!-- DUPLICATE CARDS FOR INFINITE SCROLL -->
+    <a href="https://www.roblox.com/communities/8927586/Restaurant-Roleplay#!/about" target="_blank" style="display: flex; align-items: center; color: #fff; justify-content: center; min-width: 260px;">
+        <img src="https://tr.rbxcdn.com/180DAY-461bbdf07a673a5fba83449642a4a1ea/420/420/Image/Png/noFilter" alt="Restaurant Logo" style="width: 64px; height: 64px; margin-right: 18px; border-radius: 12px; box-shadow: 0 2px 16px #0008;">
+        <div>
+            <h3 style="margin-bottom: 0.3rem; font-size: 1.5rem;">Restaurant Roleplay</h3>
+            <div style="font-weight: bold; color: #ffef8f; font-size: 1.1rem; margin-bottom: 0.2rem;">1M+</div>
+        </div>
+    </a>
+    <a href="https://www.roblox.com/communities/33205238/Aerborne-Airport-Roleplay#!/about" target="_blank" style="display: flex; align-items: center; color: #fff; justify-content: center; min-width: 260px;">
+        <img src="https://tr.rbxcdn.com/180DAY-0e99a78533f8b4cf55ffb9b7a544df5d/420/420/Image/Png/noFilter" alt="Airport Logo" style="width: 64px; height: 64px; margin-right: 18px; border-radius: 12px; box-shadow: 0 2px 16px #0008;">
+        <div>
+            <h3 style="margin-bottom: 0.3rem; font-size: 1.5rem;">Aerborne Airport Roleplay</h3>
+            <div style="font-weight: bold; color: #ffef8f; font-size: 1.1rem; margin-bottom: 0.2rem;">232K+</div>
+        </div>
+    </a>
+    <a href="https://www.roblox.com/communities/33862880/Seaborne-Cruiselines-Roleplay#!/about" target="_blank" style="display: flex; align-items: center; color: #fff; justify-content: center; min-width: 260px;">
+        <img src="https://tr.rbxcdn.com/180DAY-04f9b8e6b9fed5ef36d59913520c52d7/420/420/Image/Png/noFilter" alt="Cruiselines Logo" style="width: 64px; height: 64px; margin-right: 18px; border-radius: 12px; box-shadow: 0 2px 16px #0008;">
+        <div>
+            <h3 style="margin-bottom: 0.3rem; font-size: 1.5rem;">Seaborne Cruiselines</h3>
+            <div style="font-weight: bold; color: #ffef8f; font-size: 1.1rem; margin-bottom: 0.2rem;">5k+</div>
+        </div>
+    </a>
+    <a href="https://www.roblox.com/communities/4595505/Blau-Hotels-Resorts#!/about" target="_blank" style="display: flex; align-items: center; color: #fff; justify-content: center; min-width: 260px;">
+        <img src="https://tr.rbxcdn.com/180DAY-80e0f7d402e9de0c5aa03b316ca45d29/420/420/Image/Png/noFilter" alt="Hotel Logo" style="width: 64px; height: 64px; margin-right: 18px; border-radius: 12px; box-shadow: 0 2px 16px #0008;">
+        <div>
+            <h3 style="margin-bottom: 0.3rem; font-size: 1.5rem;">Blau Hotels & Resorts</h3>
+            <div style="font-weight: bold; color: #ffef8f; font-size: 1.1rem; margin-bottom: 0.2rem;">271K+</div>
+        </div>
+    </a>
+    <a href="https://www.roblox.com/communities/4669345/Springs-Resort#!/about" target="_blank" style="display: flex; align-items: center; color: #fff; justify-content: center; min-width: 260px;">
+        <img src="https://tr.rbxcdn.com/180DAY-0013f718205bf0500b233af76dad59cb/420/420/Image/Png/noFilter" alt="Resort Logo" style="width: 64px; height: 64px; margin-right: 18px; border-radius: 12px; box-shadow: 0 2px 16px #0008;">
+        <div>
+            <h3 style="margin-bottom: 0.3rem; font-size: 1.5rem;">Springs Resort</h3>
+            <div style="font-weight: bold; color: #ffef8f; font-size: 1.1rem; margin-bottom: 0.2rem;">6k+</div>
+        </div>
+    </a>
+  </div>
+</div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <div class="animate-on-scroll">
+                <h2 class="section-title">Ready to get started?</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem;">Join us on this journey and discover how our solutions can transform your Roblox experience.</p>
+                <a href="./contact.html" class="btn extra-glow">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>RoRanks</h3>
+                    <p>Leaders in Roblox ranking solutions, building the future with cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/roranks"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./plans.html">Plans</a></li>
+                        <li><a href="./credits.html">Credits</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fab fa-discord"></i> Join our Discord</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 RoRanks. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="system-status">
+        <div class="status-indicator"></div>
+        <div class="status-text">Systems online</div>
+    </div>
+    
+    <div class="system-logs">
+        <div class="log-title">
+            <span>System Console</span>
+            <span class="log-close">×</span>
+        </div>
+        <div class="log-content"></div>
+    </div>
+
+    <script src="../js.js"></script>
+</body>
+</html>

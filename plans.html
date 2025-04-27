@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoRanks | Plans</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .hero {
+            background: url('../image2.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            height: 100vh !important;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .plans-highlight {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .plan-card {
+            background-color: var(--card-bg-color);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .plan-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+        
+        .plan-card.featured {
+            border: 1px solid var(--accent-color);
+        }
+        
+        .plan-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="./index.html" class="logo" id="logo-easter-egg">
+                <img src="https://i.ibb.co/VcJ18Qpt/image.png" alt="Logo">
+                RoRanks
+            </a>
+            <div id="logo-easter-egg-message" style="text-align:center; color:#ffef8f; font-weight:bold; margin-top: 0.5rem;"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="./credits.html">Credits</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 100vh;">
+        <div class="container">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title" style="text-shadow: 0 0 10px rgba(0,0,0,0.5);">Our Plans</h1>
+                <p class="hero-subtitle" style="text-shadow: 0 0 10px rgba(0,0,0,0.5);">Choose the perfect plan for your needs and start ranking today.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Find Your Perfect Plan</h2>
+            <div class="plans-highlight">
+                <div class="plan-card animate-on-scroll">
+                    <img src="https://i.ibb.co/zV1cXxc7/image.png" alt="Starter Plan">
+                    <h3>Starter Plan</h3>
+                    <div class="plan-price">$0</div>
+                    <p>Free. Forever. With this, gain access to the Quiz Center, 50 API calls per month, and standard support.</p>
+                    <a href="./contact.html" class="btn" style="margin-top: 1.5rem;">Get Started</a>
+                </div>
+                <div class="plan-card animate-on-scroll">
+                    <img src="https://i.ibb.co/ccHzZ8bR/image.png" alt="Enterprise Plan">
+                    <h3>Enterprise Plan</h3>
+                    <div class="plan-price">$24</div>
+                    <p>Unlock swift ranking speed, premium support, unlimited API calls, and both a Rank Donation Center and a Quiz Center with our highest security and priority.</p>
+                    <a href="./contact.html" class="btn" style="margin-top: 1.5rem;">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="text-align: center;">
+            <div class="animate-on-scroll">
+                <h2 class="section-title">Ready to Get Started?</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem;">Choose the plan that's right for you and start your journey with RoRanks today.</p>
+                <a href="./contact.html" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>RoRanks</h3>
+                    <p>Leaders in Roblox ranking solutions, building the future with cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/roranks"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="./credits.html">Credits</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fab fa-discord"></i> Join our Discord</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 RoRanks. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="system-status">
+        <div class="status-indicator"></div>
+        <div class="status-text">Systems online</div>
+    </div>
+    
+    <div class="system-logs">
+        <div class="log-title">
+            <span>System Console</span>
+            <span class="log-close">×</span>
+        </div>
+        <div class="log-content"></div>
+    </div>
+
+    <script src="../js.js"></script>
+    <script src="../js-easteregg.js"></script>
+</body>
+</html> 

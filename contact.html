@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoRanks | Contact</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-card {
+            background-color: var(--card-bg-color);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+            cursor: pointer;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--accent-color);
+        }
+        
+        .contact-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="./index.html" class="logo">
+                <img src="https://i.ibb.co/VcJ18Qpt/image.png" alt="Logo">
+                RoRanks
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./plans.html">Plans</a></li>
+                    <li><a href="./credits.html">Credits</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </button>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1 class="section-title">Contact Us</h1>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Need to get in touch with us or start your plan? Choose one of the options below.</p>
+            
+            <div class="contact-options">
+                <div class="contact-card" onclick="window.location.href='https://discord.gg/roranks'">
+                    <div class="contact-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Join Our Discord</h3>
+                    <p style="margin-bottom: 1.5rem;">Connect with our community and get real-time support</p>
+                    <span class="btn">Join Discord</span>
+                </div>
+                
+                <div class="contact-card" onclick="window.location.href='mailto:roranksassistance@gmail.com'">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p style="margin-bottom: 1.5rem;">Send us an email and we'll get back to you</p>
+                    <span class="btn">Email Now</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>RoRanks</h3>
+                    <p>Leaders in Roblox ranking solutions, building the future with cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/roranks"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./plans.html">Plans</a></li>
+                        <li><a href="./credits.html">Credits</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fab fa-discord"></i> Join our Discord</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 RoRanks. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="system-status">
+        <div class="status-indicator"></div>
+        <div class="status-text">Systems online</div>
+    </div>
+
+    <div class="system-logs">
+        <div class="log-title">
+            <span>System Console</span>
+            <span class="log-close">×</span>
+        </div>
+        <div class="log-content"></div>
+    </div>
+
+    <script src="../js.js"></script>
+</body>
+</html> 
